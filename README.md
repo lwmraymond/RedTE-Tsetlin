@@ -1,6 +1,13 @@
 # RedTE
 
-A MARL-based distributed traffic engineering system
+[SIGCOMM 24] RedTE: A MARL-based distributed traffic engineering system, with a control loop latency of < 100𝑚s, while achieving performance comparable to centralized TE systems. RedTE's innovation
+is the modeling of TE as a distributed cooperative multi-agent problem, and we design a novel multi-agent deep reinforcement learning
+algorithm to solve it, which enables each agent to make globally informed decisions solely based on local information.
+
+For more details, please refer to [our paper](https://cs.stanford.edu/~keithw/sigcomm2024/sigcomm24-final237-acmpaginated.pdf) from ACM SIGCOMM'24.
+
+Fei Gui, Songtao Wang, Dan Li, Li Chen, Kaihui Gao, Congcong Min, Yi Wang, "RedTE: Mitigating Subsecond Traffic Bursts with Real-time and
+Distributed Traffic Engineering", ACM SIGCOMM 2024, Sydney, Australia.
 
 # Environment Setup
 
