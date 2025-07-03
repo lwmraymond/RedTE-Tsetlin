@@ -54,7 +54,7 @@ flags.DEFINE_string('lpPerformFile', 'lpRes', 'the path of conrtained LP result 
 
 # flags for agent type
 flags.DEFINE_string("stamp_type", "__TIME_STAMP", "the stamp style for the name of log directory, set to be TIME_STAMP or other specifial dir name to show the features of the expr")
-flags.DEFINE_string("agent_type", "multi_agent", "the method type for the agent include: drl_te, OSPF, MCF, OBL or multi_agent") 
+flags.DEFINE_string("agent_type", "multi_agent", "the method type for the agent include: drl_te, OSPF, MCF, OBL, tm_dqn or multi_agent")
 flags.DEFINE_string("mcf_path", None, "the answer files path for mcf method")
 flags.DEFINE_string("obl_path", None, "the answer files path for obl method")
 flags.DEFINE_string("or_path", None, "the answer files path for OR method")

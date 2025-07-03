@@ -64,3 +64,22 @@ All input files are located in `DRLTE/inputs/`.
 
 # TBD
 there are some codes which are lost in this version of RedTE, which latter maybe uploaded if founded.
+
+## Tsetlin-based DQN
+
+`DRLTE/drlte/tsetlin_dqn` provides an experimental DQN agent where the Q network is implemented with Tsetlin Machines (`tmu` library). The agent maintains one `TMRegressor` per action and uses the existing replay buffer utilities. This can be used as a starting point for replacing neural networks with Tsetlin logic in RedTE routers.
+
+An executable example is available at `DRLTE/drlte/tsetlin_dqn/example.py` which runs the agent on a tiny dummy router environment:
+
+```bash
+python DRLTE/drlte/tsetlin_dqn/example.py
+```
+
+This demonstrates how to interact with the `TsetlinDQNAgent` and can be adapted for real RedTE environments.
+
+To train on the original RedTE traffic matrix data, use `tm_train.py` which wraps
+the provided simulation environment:
+
+```bash
+python DRLTE/drlte/tsetlin_dqn/tm_train.py --file_name Abi_train4000 --episodes 2
+```
