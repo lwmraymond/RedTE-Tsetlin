@@ -8,7 +8,7 @@ from collections import deque
 import random
 import numpy as np
 
-from ReplayBuffer import sum_tree
+from . import sum_tree
 import math
 
 from tensorflow.compat.v1.logging import log, log_first_n, set_verbosity
